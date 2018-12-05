@@ -387,6 +387,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7bdd3d888d6134893a53d484cd101e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &781355561 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114735708547894604, guid: 12076699c23f7fe47b8db4abd0389c7d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1654571130}
+  m_Script: {fileID: 11500000, guid: e252d71d65ada7f42b05a7c8013d4ee2, type: 3}
 --- !u!1 &838567275
 GameObject:
   m_ObjectHideFlags: 0
@@ -958,6 +964,48 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1452507118}
   m_CullTransparentMesh: 0
+--- !u!1001 &1654571130
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4325556913445274, guid: 12076699c23f7fe47b8db4abd0389c7d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 79.84999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325556913445274, guid: 12076699c23f7fe47b8db4abd0389c7d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 73.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325556913445274, guid: 12076699c23f7fe47b8db4abd0389c7d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325556913445274, guid: 12076699c23f7fe47b8db4abd0389c7d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325556913445274, guid: 12076699c23f7fe47b8db4abd0389c7d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325556913445274, guid: 12076699c23f7fe47b8db4abd0389c7d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325556913445274, guid: 12076699c23f7fe47b8db4abd0389c7d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4325556913445274, guid: 12076699c23f7fe47b8db4abd0389c7d, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 12076699c23f7fe47b8db4abd0389c7d, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1819001613
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,6 +1017,7 @@ GameObject:
   - component: {fileID: 1819001617}
   - component: {fileID: 1819001616}
   - component: {fileID: 1819001615}
+  - component: {fileID: 1819001618}
   m_Layer: 5
   m_Name: Pause
   m_TagString: Untagged
@@ -1070,6 +1119,47 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1819001613}
   m_CullTransparentMesh: 0
+--- !u!114 &1819001618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1819001613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 3
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 781355561}
+          m_MethodName: SceneChange
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &1991642955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1216,7 +1306,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0.546, y: 0.92639345}
-  m_AnchoredPosition: {x: 134.5, y: 7.4309}
+  m_AnchoredPosition: {x: 134.5, y: 7.430893}
   m_SizeDelta: {x: -16.6, y: 12.373}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2065457360
